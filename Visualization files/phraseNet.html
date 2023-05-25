@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Phrase Net</title>
+    <meta charset="utf-8">
+    <script src="https://d3js.org/d3.v6.js"></script>
+    <script src="MassShootings.js"></script>
+    <script src="OwningGuns.js"></script>
+    <script src="howShootingMakesYouFeel.js"></script>
+    <script src="RedFlagLaw.js"></script>
+    <script src="RestrictionOnSpecificGuns.js"></script>
+
+  </head>
+ <style>  .button {background-color: #4CAF50;}
+  .button {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    h2 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-style: italic;
+      text-align: center;
+      color: rgb(53, 53, 71);
+    }
+    select {
+      width: 250px;
+      height: 30px;
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      font-size: 16px;
+      color: #333;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+  }
+  
+  /* Style the options */
+  option {
+      font-size: 16px;
+      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Style the dropdown arrow */
+  select:after {
+      content: "\25BC";
+      font-size: 16px;
+      color: #333;
+      position: absolute;
+      top: 9px;
+      right: 10px;
+      z-index: 1;
+  }
+  </style>
+  <body>
+    <br>
+    <a href="index.html" class="button">Back to Home page</a>
+
+    <br>
+    <h1> Phrase Net</h1>
+    <select id="dropdown">
+      <option value="">-- Select an option --</option>
+      <option value="Topic1">Topic-1- How Shooting Makes You Feel</option>
+      <option value="Topic2">Topic-2- Mass Shootings</option>
+      <option value="Topic3">Topic-3- Owning Guns for self defense</option>
+      <option value="Topic4">Topic-4- Red Flag Laws</option>
+      <option value="Topic5">Topic-3- Restriction On Specific Guns</option>
+    </select>
+    
+    <div id="Topic1" style="display:none;">
+    <h2>Phrase Net for topic: How shooting a gun makes you feel?</h2>
+    </div>
+    <div id="Topic2" style="display:none;">
+      <h2>Phrase Net for topic: Mass Shootings</h2>
+    </div>
+    <div id="Topic3" style="display:none;">
+      <h2>Phrase Net for topic: Owning Guns for Self-defense</h2>
+    </div>
+    </div>
+    <div id="Topic4" style="display:none;">
+      <h2>Phrase Net for topic: Red Flag Laws</h2>
+    </div>
+    <div id="Topic5" style="display:none;">
+      <h2>Phrase Net for topic: Restriction on specific Guns</h2>
+    </div>
+    
+    <script>
+      var dropdown = document.getElementById("dropdown");
+      var topic1 = document.getElementById("Topic1");
+      var topic2 = document.getElementById("Topic2");
+      var topic3 = document.getElementById("Topic3");
+      var topic4 = document.getElementById("Topic4");
+      var topic5 = document.getElementById("Topic5");
+      dropdown.addEventListener("change", function() {
+        topic1.style.display = "none";
+        topic2.style.display = "none";
+        topic3.style.display = "none";
+        topic4.style.display = "none";
+        topic5.style.display = "none";
+        if (this.value === "Topic1") {
+          topic1.style.display = "block";
+        } else if (this.value === "Topic2") {
+          topic2.style.display = "block";
+        } else if (this.value === "Topic3") {
+          topic3.style.display = "block";
+        }
+        else if (this.value === "Topic4") {
+          topic4.style.display = "block";
+        }
+        else if (this.value === "Topic5") {
+          topic5.style.display = "block";
+        }
+        
+      });
+    </script>
+  </body>
+</html>

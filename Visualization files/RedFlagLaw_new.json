@@ -1,0 +1,154 @@
+{
+    "nodes": [
+        {
+            "id": "think",
+            "frequency": 25
+        },
+        {
+            "id": "people",
+            "frequency": 18
+        },
+        {
+            "id": "laws",
+            "frequency": 10
+        },
+        {
+            "id": "lot",
+            "frequency": 8
+        },
+        {
+            "id": "gun",    
+            "frequency": 8
+        },
+        {
+            "id": "question",
+            "frequency": 7
+        },
+        {
+            "id": "red",
+            "frequency": 6
+        },
+        {
+            "id": "flag",
+            "frequency": 6
+        },
+        {
+            "id": "need",
+            "frequency": 5
+        },
+        {
+            "id": "violence",
+            "frequency": 5
+        },
+        {
+            "id": "needs",
+            "frequency": 4
+        },
+        {
+            "id": "certain",
+            "frequency": 4
+        },
+        {
+            "id": "united",
+            "frequency": 4
+        },
+        {
+            "id": "states",
+            "frequency": 4
+        },
+        {
+            "id": "situations",
+            "frequency": 3
+        },
+        {
+            "id": "way",
+            "frequency": 3
+        },
+        {
+            "id": "curious",
+            "frequency": 3
+        },
+        {
+            "id": "legislation",
+            "frequency": 3
+        }
+    ],
+    "links": [
+        {
+            "source": "laws",
+            "target": "red"
+        },
+        {
+            "source": "laws",
+            "target": "flag"
+        },
+        {
+            "source": "think",
+            "target": "needs"
+        },
+        {
+            "source": "needs",
+            "target": "question"
+        },
+        {
+            "source": "certain",
+            "target": "situations"
+        },
+        {
+            "source": "people",
+            "target": "certain"
+        },
+        {
+            "source": "states",
+            "target": "united"
+        },
+        {
+            "source": "way",
+            "target": "needs"
+        },
+        {
+            "source": "people",
+            "target": "think"
+        },
+        {
+            "source": "think",
+            "target": "lot"
+        },
+        {
+            "source": "gun",
+            "target": "people"
+        },
+        {
+            "source": "think",
+            "target": "need"
+        },
+        {
+            "source": "curious",
+            "target": "think"
+        },
+        {
+            "source": "laws",
+            "target": "red"
+        },
+        {
+            "source": "laws",
+            "target": "flag"
+        },
+        {
+            "source": "need",
+            "target": "people"
+        },
+        {
+            "source": "laws",
+            "target": "gun"
+        },
+        {
+            "source": "gun",
+            "target": "violence"
+        },
+        {
+            "source": "legislation",
+            "target": "laws"
+        }
+    ]
+}

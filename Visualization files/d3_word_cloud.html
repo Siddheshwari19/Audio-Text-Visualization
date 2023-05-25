@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+    <meta charset="utf-8" />
+
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <!-- Load d3_word_cloud_layout -->
+    <script src="d3_word_cloud_layout.js"></script>
+<style>
+    .button {background-color: #4CAF50;}
+    .button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+    h2{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+        margin-left: 90px;
+      }
+    label{
+        margin-left: 90px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      /* Style the select element */
+    select {
+        width: 250px;
+        height: 30px;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        font-size: 16px;
+        color: #333;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    
+    /* Style the options */
+    option {
+        font-size: 16px;
+        color: #333;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    /* Style the dropdown arrow */
+    select:after {
+        content: "\25BC";
+        font-size: 16px;
+        color: #333;
+        position: absolute;
+        top: 9px;
+        right: 10px;
+        z-index: 1;
+    }
+  
+</style>
+    <body onload="loadDefaultCloud()">
+        <a href="index.html" class="button">Back to Home page</a>
+        <br>
+        <br>
+        <h2>Word Clouds</h2>
+        <label for="viewby" > View By</label>
+        
+        <select id="viewby" onchange="onSelectionChange(this.value)">
+            <option value="All">All</option>
+            <option value="Speakers">Speakers</option>
+            <option value="Topics">Topics</option>
+        </select>
+        <br> <br>
+        <label for="speakers" id="speaker_label" hidden> Speaker </label> 
+        <select id="speakers" onchange="getWords(this.value)" hidden>
+            <option value="Moderator" >Moderator </option>
+            <option value="Speaker 1" >Speaker 1 </option>
+            <option value="Speaker 2" >Speaker 2 </option>
+            <option value="Speaker 3" >Speaker 3 </option>
+            <option value="Speaker 4" >Speaker 4 </option>
+            <option value="Speaker 5" >Speaker 5 </option>
+            <option value="Speaker 6" >Speaker 6 </option>
+            <option value="Speaker 7" >Speaker 7 </option>
+            <option value="Speaker 8" >Speaker 8 </option>
+        </select>
+        <br>
+        <label for="topics" id="topic_label" hidden> Topic </label>
+        <select id="topics" onchange="getWords(this.value)" hidden>
+            <option value="How shooting a gun makes you feel?" >How shooting a gun makes you feel? </option>
+            <option value="Mass shootings" >Mass shootings </option>
+            <option value="Owning guns for self-defense" >Owning guns for self-defense </option>
+            <option value="Red-flag laws" >Red-flag laws </option>
+            <option value="Restriction on specific guns" >Restriction on specific guns </option>
+            
+        </select>
+        <br>
+        <br>
+        <br>
+        <div id="my_dataviz"></div>
+        <script src="d3_word_cloud.js"></script>
+       
+    </body>
+</html>

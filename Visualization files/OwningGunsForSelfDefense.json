@@ -1,0 +1,245 @@
+{
+    "nodes": [
+        {
+            "id": "police",
+            "frequency": 23
+        },
+        {
+            "id": "people",
+            "frequency": 18
+        },
+        {
+            "id": "think",
+            "frequency": 12
+        },
+        {
+            "id": "gun",
+            "frequency": 11
+        },
+        {
+            "id": "like",
+            "frequency": 10
+        },
+      
+        {
+            "id": "want",
+            "frequency": 10
+        },
+        {
+            "id": "officer",
+            "frequency": 8
+        },
+       
+        {
+            "id": "community",
+            "frequency": 7
+        },
+        {
+            "id": "security",
+            "frequency": 7
+        },
+       
+        {
+            "id": "need",
+            "frequency": 6
+        },
+        {
+            "id": "school",
+            "frequency": 6
+        },
+        {
+            "id": "money",
+            "frequency": 6
+        },
+       
+        {
+            "id": "fund",
+            "frequency": 6
+        },
+        {
+            "id": "america",
+            "frequency": 5
+        },
+        {
+            "id": "feel",
+            "frequency": 5
+        },
+        {
+            "id": "time",
+            "frequency": 5
+        },
+        {
+            "id": "oversight",
+            "frequency": 5
+        },
+        {
+            "id": "range",
+            "frequency": 5
+        },
+        {
+            "id": "training",
+            "frequency": 5
+        },
+        {
+            "id": "scarcity",
+            "frequency": 4
+        },
+        {
+            "id": "talking",
+            "frequency": 4
+        },
+        
+     
+      
+        {
+            "id": "accountability",
+            "frequency": 4
+        }
+    ],
+    "links": [
+        {
+            "source": "scarcity",
+            "target": "need"
+        },
+        {
+            "source": "need",
+            "target": "gun"
+        },
+        {
+            "source": "feel",
+            "target": "like"
+        },
+       
+        {
+            "source": "security",
+            "target": "officer"
+
+        },
+        {
+            "source": "school",
+            "target": "officer"
+        },
+        {
+            "source": "gun",
+            "target": "range"
+        },
+        {
+            "source": "america",
+            "target": "scarcity"
+        },
+        {
+            "source": "america",
+            "target": "scarcity"
+        },
+        {
+            "source": "america",
+            "target": "gun"
+        },
+        {
+            "source": "school",
+            "target": "security"
+        },
+        {
+            "source": "officer",
+            "target": "time"
+        },
+        {
+            "source": "officer",
+            "target": "police"
+        },
+       
+      
+        {
+            "source": "want",
+            "target": "money"
+        },
+      
+        {
+            "source": "officer",
+            "target": "police"
+        },
+        {
+            "source": "think",
+            "target": "feel"
+        },
+        {
+            "source": "people",
+            "target": "money"
+        },
+        {
+            "source": "oversight",
+            "target": "accountability"
+        },
+        {
+            "source": "oversight",
+            "target": "police"
+        },
+        {
+            "source": "police",
+            "target": "accountability"
+        },
+    
+        {
+            "source": "police",
+            "target": "fund"
+        },
+       
+        {
+            "source": "need",
+            "target": "feel"
+        },
+       
+        {
+            "source": "need",
+            
+            "target": "training"
+        },
+        
+       
+        {
+            "source": "training",
+            "target": "time"
+        },
+        {
+            "source": "need",
+            "target": "police"
+        },
+       
+      
+        {
+            "source": "police",
+            "target": "community"
+        },
+        {
+            "source": "community",
+            "target": "security"
+        },
+        {
+            "source": "talking",
+            "target": "gun"
+        },
+        {
+            "source": "talking",
+            "target": "police"
+        },
+        {
+            "source": "people",
+            "target": "gun"
+        },
+        {
+            "source": "people",
+            "target": "security"
+        },
+        {
+            "source": "police",
+            "target": "security"
+        },
+        {
+            "source": "security",
+            "target": "gun"
+        }
+        
+
+      
+    ]
+}
